@@ -1,0 +1,62 @@
+.card{
+    position: relative;
+    overflow: hidden;
+}
+.card .icons{
+    display: flex;
+    flex-direction: column ;
+    position: absolute;
+    background-color: yellowgreen;
+    height: 40vh;
+    padding: 10px;
+    padding-top: 30px;
+    margin-left: 237px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-sizing: border-box;
+    right: -30%;
+    transition: all 1s;
+
+}
+.card:hover .icons{
+    right: 0;
+}
+.card .icons .fa-brands{
+    font-size: 30px;
+    padding: 20px 0px;
+}
+.card .designation{
+    opacity: 0;
+}
+.card:hover .designation{
+    opacity: 1;
+}
+.card:hover .name{
+    opacity: 0;
+}
+.card .name{
+    position: relative;
+    top: 20px;
+}
+.card .designation
+{
+    position: relative;
+    top: -26px;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+.card .designation,
+.card .name{
+    font-size: 30px;
+    text-align: center;
+}
+.card img{
+    transform: scale(1);
+    transition: all 1s;
+    box-sizing: border-box;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+
